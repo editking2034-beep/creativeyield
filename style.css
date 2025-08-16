@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 10;
+  padding: 9;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: scroll;
+  size: 10px;
+}
+img {
+  max-width: 100%;
+  display:ruby-text-container;
+overflow-x: scroll;
+}
+
+/* Header */
+.hero-section {
+  text-align: center;
+  padding: 10% 2%;
+  background: #111;
+}
+
+.logo-title {
+  margin-bottom: 10px;
+  transform-origin: 6cqh;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.hero-img img {
+  width: 300px;
+  margin: 10px auto;
+}
+
+/* Work Together Section */
+.work-together {
+  position: relative;
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  transition: transform 0.3s ease;
+   transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2),
+              inset 0 0 12px rgba(255, 255, 255, 0.25);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-box,
+  .contact {
+    flex-direction: circle;
+    align-items: center;
+  }
+
+  .work-card {
+    padding: 30px 20px;
+  }
+
+  .work-together::before {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-box,
+  .contact {
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+}
+.work-together::before {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: #facc00;
+  border-radius: 100%;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: cubic-bezier(1.95, 1.05, 1.795, 1.035);
+}
+
+.work-card {
+  position: relative;
+  background: #fff;
+  color: #000;
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+}
+
+.work-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.work-card p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.work-card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Features Section */
+.features {
+  background-color: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Graph Section */
+.graph-image {
+  padding: 50px 20px;
+  background-color: #000;
+  text-align: center;
+}
+/* Enhanced Graph Image Styling */
+.graph-image {
+  padding: 60px 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-image img {
+  max-width: 90%;
+  width: 800px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(142, 140, 3, 0.748),
+              inset 0 0 10px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(145deg, #111, #000);
+  transition: transform 0.3s ease;
+}
+
+.graph-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2),
+              inset 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+/* Quote */
+.quote {
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  background-color: #f3c00a;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #111;
+  transform-style: initial;
+}
+
+.contact-details {
+  max-width: 400px;
+}
+
+.contact-details a {
+  color: #FFA726;
+  margin-right: 30px;
+  font-size: 3.5rem;
+}
+
+.contact-logo img {
+  max-width: 200px;
+}
+
+/* Footer */
+.image-footer {
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  background-color: #000;
+  padding: 50px;
+  flex-wrap: wrap-reverse;
+  transition: 5 ease-in;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.image-footer img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+header section {
+  display: flex;
+  justify-content: center;  /* Center the images horizontally */
+  align-items: center;      /* Align vertically (if there's height) */
+  gap: 30px;                /* Space between images */
+  padding: 30px;
+}
+
+header section img {
+
+  height: 100px; /* Equal height */
+  object-fit: contain;
+  border-radius: 20px; /* Optional: rounded corners */
+  transition-duration: 0.5s;
+}
